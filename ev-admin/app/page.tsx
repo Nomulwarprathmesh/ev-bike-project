@@ -1,11 +1,4 @@
-import React from 'react'
-
-function page() {
-  return (
-    <div>
-      <h1>Admin</h1>
-    </div>
-  )
+import { redirect } from "next/navigation";
+export default function Home() {
+  redirect("/admin");
 }
-
-export default page
