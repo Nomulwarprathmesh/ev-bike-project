@@ -1,0 +1,47 @@
+{
+  "name": "ev-marketplace-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EV Marketplace Platform - Admin, Vendor & Marketplace Apps",
+  "workspaces": [
+    "ev-admin",
+    "ev-marketplace",
+    "ev-vender",
+    "shared/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:admin": "npm run dev --workspace=ev-admin",
+    "dev:marketplace": "npm run dev --workspace=ev-marketplace",
+    "dev:vendor": "npm run dev --workspace=ev-vender",
+    "build": "npm run build --workspaces --if-present",
+    "build:admin": "npm run build --workspace=ev-admin",
+    "build:marketplace": "npm run build --workspace=ev-marketplace",
+    "build:vendor": "npm run build --workspace=ev-vender",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present && rimraf node_modules",
+    "clean:builds": "rimraf ev-admin/.next ev-marketplace/.next ev-vender/.next",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/ev-marketplace"
+  },
+  "keywords": [
+    "ev",
+    "marketplace",
+    "admin",
+    "vendor",
+    "nextjs",
+    "monorepo"
+  ],
+  "author": "Your Team",
+  "license": "MIT"
+}

@@ -45,10 +45,7 @@ function Sidebar() {
     <aside className="flex h-screen w-72 flex-col bg-[#0B1F3A] p-5 text-white">
       {/* Logo */}
       <div className="mb-8 flex items-center gap-3">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-500">
-          <Zap size={24} />
-        </div>
-        <h1 className="font-bold">EV Admin</h1>
+        <img src="/logo.svg" alt="Voltrix Admin" height="40" />
       </div>
 
       {/* Links */}

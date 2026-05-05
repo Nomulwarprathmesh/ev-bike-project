@@ -1,0 +1,21 @@
+{
+  "name": "@ev-marketplace/utils",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

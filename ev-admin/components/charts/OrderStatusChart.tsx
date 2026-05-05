@@ -44,5 +44,6 @@ export default function OrderStatusChart() {
           </div>
         ))}
       </div>
+    </div>
   );
 }
