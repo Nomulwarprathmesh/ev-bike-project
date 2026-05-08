@@ -1,0 +1,13 @@
+{
+  "extends": "./packages/config/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ev-platform/ui": ["packages/ui/src/index.ts"],
+      "@ev-platform/types": ["packages/types/src/index.ts"],
+      "@ev-platform/utils": ["packages/utils/src/index.ts"],
+      "@ev-platform/api-client": ["packages/api-client/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", ".turbo", "apps/*/.next", "apps/*/dist"]
+}

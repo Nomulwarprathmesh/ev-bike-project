@@ -1,0 +1,23 @@
+{
+  "extends": "../../packages/config/tsconfig/next.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ev-platform/api-client": ["../../packages/api-client/src/index.ts"],
+      "@ev-platform/types": ["../../packages/types/src/index.ts"],
+      "@ev-platform/utils": ["../../packages/utils/src/index.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "app/**/*.js",
+    "app/**/*.jsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
